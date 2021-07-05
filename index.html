@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>AINE School</title>
+        <!--to link the css file--> 
+        <link rel="stylesheet" href="style.css">
+        <!--to add a google font-->
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id ="banner">
+            <img src="logo.png" class="logo">
+            <div class ="banner-text">
+                <h1>Online School</h1>
+                <p>Enjoy Schooling online</p>
+                <div class="banner-btn">
+                    <a href="#"> <span></span> Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                    <li><a href="#">MEET US</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menuBtn">
+            <img src="menu.png" id="menu" >
+        </div>
+
+        <script>
+            var menuBtn =document.getElementById("menuBtn")
+            var sideNav =document.getElementById("sideNav")
+            var menu =document.getElementById("menu")
+            menuBtn.onclick = function() {
+                    if(sideNav.style.right == "-250px") {
+                        sideNav.style.right = "0";
+                    }
+                    else {
+                    sideNav.style.right="-250px";
+                    }
+            }
+        </script>
+    </body>
+</html>
